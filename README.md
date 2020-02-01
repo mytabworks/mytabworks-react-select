@@ -1,3 +1,6 @@
+[![NPM]](https://www.npmjs.com/package/mytabworks-react-select)
+[![Build Status](https://github.com/mytabworks/mytabworks-react-select/blob/master)
+
 # mytabworks-react-select
 This repository was build from the ground up. it is as expected to be a light-weight and fast because of the optimization.
 It is a powerful yet light-weight dependency that can benefit both dev and user at it's fullest.
@@ -5,18 +8,18 @@ To make it optimize, user can search in the option without updating every entry.
 It support Enter to select and Backspace to remove multiple selected option
 
 # installation
-
-npm install --save mytabworks-react-select
-
+```
+npm i mytabworks-react-select
+```
 # How to use
 
 ## import to your project
-```
+```js
 import Select from 'mytabworks-react-select'
 ```
 
 ## basic usage
-```js
+```html
 <Select id="country" name="country">
     {[
         {label: "Philippines", value: "ph"},
@@ -26,9 +29,9 @@ import Select from 'mytabworks-react-select'
 </Select>
 ```
 
-## current value usage
-It will set a default value of the select, but without onChange event it will be like a `read-only` instead use defaultValue.
-```js
+## value usage
+It will set a value of the select, but without onChange event it will be like a `read-only`. instead use `defaultValue`.
+```html
 <Select id="country" name="country" value={{label: "Philippines", value: "ph"}}>
     {[
         {label: "Philippines", value: "ph"},
@@ -40,7 +43,7 @@ It will set a default value of the select, but without onChange event it will be
 
 ## multiple property usage
 It can select multiple options and set multiple default values.
-```js
+```html
 <Select id="emotions" name="emotions" defaultValue={[{label: "Happy", value: "1"}, {label: "Excited", value: "2"}]} multiple={true}>
     {[
         {label: "Happy", value: "1"},
@@ -55,7 +58,7 @@ It can select multiple options and set multiple default values.
 
 ## option group usage
 It can group the options.
-```js
+```html
 <Select id="emotions" name="emotions" defaultValue={[{label: "Happy", value: "1"}, {label: "Excited", value: "2"}]} multiple={true}>
     {[  
         {label: "Possitive", value: [
@@ -80,8 +83,8 @@ The datatypes with "*" means it is required.
 |-------------|---------------|-------------|-------------|
 | id          | string *      |             | id of the HTML select|
 | name        | string *      |             | name of the HTML select|
-| value       | array|object  |             | control the current value|
-| defaultValue| array|object  |             | the default value|
+| value       | array\|object |             | control the [current value](https://github.com/mytabworks/mytabworks-react-select/blob/master#current-value-usage)|
+| defaultValue| array\|object |             | the default value|
 | placeholder | string        |             | placeholder of your Select|
 | className   | string        |             | additional className for the Component container|
 | disabled    | bolean        | false       | disabling the Select|
@@ -92,41 +95,7 @@ The datatypes with "*" means it is required.
 
 # Jest Test issue?
 
-jest test SyntaxError: unexpected token export? no problem!
-
-## First solution
-add to your jest configuration the transformIgnorePatterns containing /node_modules/(?!(?:mytabwork-utils))
-
-```js
-"transformIgnorePatterns": [
-    "/node_modules/(?!(?:mytabwork-utils))"
-]
-```
-
-## Second solution
-
-### first step
-you need to change .babelsrc to babel.config.js. in case you dont have .babelsrc you can create babel.config.js 
-and copy your babel configuration in package.json then paste it in your babel.config.js. like below
-
-```js
-module.exports = {
-    "presets": [
-        "react-app"
-      ]
-}
-```
-
-#### second step
-on package.json script test put the --transformIgnorePatterns '/node_modules/(?!(?:mytabwork-utils))' after test.
-
-```js
-"scripts": {
-    "test": "react-app test --transformIgnorePatterns '/node_modules/(?!(?:mytabwork-utils))'"
-}
-``` 
-
-it will work like a charm (^_^)y
+[jest test SyntaxError: unexpected token export? no problem!](https://github.com/mytabworks/mytabworks-utils/blob/master/README.md#jest-test-issue)
 
 ## License
 MIT Licensed. Copyright (c) Mytabworks 2020.

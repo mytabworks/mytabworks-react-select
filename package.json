@@ -1,6 +1,6 @@
 {
   "name": "mytabworks-react-select",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "src/index.js",
   "description": "This repository was build from the ground up. it is as expected to be a light-weight and fast because of the optimization.\\nIt is a powerful yet light-weight dependency that can benefit both dev and user at it's fullest.",
   "repository": {
