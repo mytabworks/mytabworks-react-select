@@ -26,7 +26,7 @@ import Select from 'mytabworks-react-select'
 </Select>
 ```
 
-## default value usage
+## current value usage
 It will set a default value of the select, but without onChange event it will be like a `read-only` instead use defaultValue.
 ```js
 <Select id="country" name="country" value={{label: "Philippines", value: "ph"}}>
@@ -76,18 +76,19 @@ It can group the options.
 All properties that is supported by mytabworks-react-select.<br/>
 The datatypes with "*" means it is required.
 
-- `PROPERTY`  `DATATYPES`     `DEFAULT`
-- id          | string *      |
-- name        | string *      |
-- value       | array|object  |
-- defaultValue| array|object  |
-- placeholder | string        | 
-- className   | string        |
-- disable     | bolean        | false
-- multiple    | boolean       | false
-- isAutoClear | boolean       | false
-- onChange    | func          | 
-- noDisplayText| string        | "no option"
+|`PROPERTY`   |`DATATYPES`    |`DEFAULT`    |`DESCRIPTION`|
+|-------------|---------------|-------------|-------------|
+| id          | string *      |             | id of the HTML select|
+| name        | string *      |             | name of the HTML select|
+| value       | array|object  |             | control the current value|
+| defaultValue| array|object  |             | the default value|
+| placeholder | string        |             | placeholder of your Select|
+| className   | string        |             | additional className for the Component container|
+| disabled    | bolean        | false       | disabling the Select|
+| multiple    | boolean       | false       | it allow users to select multiple option|
+| isAutoClear | boolean       | false       | it clear the searched text after selecting|
+| onChange    | func          |             | it enables to subscribe change event| 
+| noDisplayText| string       | "no option" | the text when there is no option|
 
 # Jest Test issue?
 
