@@ -1,7 +1,7 @@
 # mytabworks-react-select
 This repository was build from the ground up. it is as expected to be a light-weight and fast because of the optimization.
 It is a powerful yet light-weight dependency that can benefit both dev and user at it's fullest.
-To make it optimize, user can search in the option without updating every entry. unless it is done in entry
+To make it optimize, user can search in the option without updating every entry. unless it is done in entry.<br/>
 It support Enter to select and Backspace to remove multiple selected option
 
 # installation
@@ -26,7 +26,7 @@ import Select from 'mytabworks-react-select'
 </Select>
 ```
 
-## Default value usage
+## default value usage
 It will set a default value of the select, but without onChange event it will be like a `read-only` instead use defaultValue.
 ```js
 <Select id="country" name="country" value={{label: "Philippines", value: "ph"}}>
@@ -38,7 +38,7 @@ It will set a default value of the select, but without onChange event it will be
 </Select>
 ```
 
-## Multiple property usage
+## multiple property usage
 It can select multiple options and set multiple default values.
 ```js
 <Select id="emotions" name="emotions" defaultValue={[{label: "Happy", value: "1"}, {label: "Excited", value: "2"}]} multiple={true}>
@@ -53,7 +53,7 @@ It can select multiple options and set multiple default values.
 </Select>
 ```
 
-## Option Group usage
+## option group usage
 It can group the options.
 ```js
 <Select id="emotions" name="emotions" defaultValue={[{label: "Happy", value: "1"}, {label: "Excited", value: "2"}]} multiple={true}>
@@ -73,21 +73,21 @@ It can group the options.
 ```
 
 # Properties
-All the properties that is supported by mytabworks select.
+All properties that is supported by mytabworks-react-select.<br/>
 The datatypes with "*" means it is required.
 
-`PROPERTY`  `DATATYPES`     `DEFAULT`
-id          | string *      |
-name        | string *      |
-value       | array|object  |
-defaultValue| array|object  |
-placeholder | string        | 
-className   | string        |
-disable     | bolean        | false
-multiple    | boolean       | false
-isAutoClear | boolean       | false
-onChange    | func          | 
-noDisplayText| string        | "no option"
+- `PROPERTY`  `DATATYPES`     `DEFAULT`
+- id          | string *      |
+- name        | string *      |
+- value       | array|object  |
+- defaultValue| array|object  |
+- placeholder | string        | 
+- className   | string        |
+- disable     | bolean        | false
+- multiple    | boolean       | false
+- isAutoClear | boolean       | false
+- onChange    | func          | 
+- noDisplayText| string        | "no option"
 
 # Jest Test issue?
 
