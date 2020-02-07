@@ -26,8 +26,8 @@ import Select from 'mytabworks-react-select'
 </Select>
 ```
 
-## current value usage
-It will set a default value of the select, but without onChange event it will be like a `read-only` instead use defaultValue.
+## value usage
+It will set a value of the select, but without onChange event it will be like a `read-only`. instead use `defaultValue`.
 ```js
 <Select id="country" name="country" value={{label: "Philippines", value: "ph"}}>
     {[
@@ -80,8 +80,8 @@ The datatypes with "*" means it is required.
 |-------------|---------------|-------------|-------------|
 | id          | string *      |             | id of the HTML select|
 | name        | string *      |             | name of the HTML select|
-| value       | array|object  |             | control the current value|
-| defaultValue| array|object  |             | the default value|
+| value       | array\|object |             | control the [current value](#current-value-usage)|
+| defaultValue| array\|object |             | the default value|
 | placeholder | string        |             | placeholder of your Select|
 | className   | string        |             | additional className for the Component container|
 | disabled    | bolean        | false       | disabling the Select|
@@ -92,41 +92,7 @@ The datatypes with "*" means it is required.
 
 # Jest Test issue?
 
-jest test SyntaxError: unexpected token export? no problem!
-
-## First solution
-add to your jest configuration the transformIgnorePatterns containing /node_modules/(?!(?:mytabwork-utils))
-
-```js
-"transformIgnorePatterns": [
-    "/node_modules/(?!(?:mytabwork-utils))"
-]
-```
-
-## Second solution
-
-### first step
-you need to change .babelsrc to babel.config.js. in case you dont have .babelsrc you can create babel.config.js 
-and copy your babel configuration in package.json then paste it in your babel.config.js. like below
-
-```js
-module.exports = {
-    "presets": [
-        "react-app"
-      ]
-}
-```
-
-#### second step
-on package.json script test put the --transformIgnorePatterns '/node_modules/(?!(?:mytabwork-utils))' after test.
-
-```js
-"scripts": {
-    "test": "react-app test --transformIgnorePatterns '/node_modules/(?!(?:mytabwork-utils))'"
-}
-``` 
-
-it will work like a charm (^_^)y
+[jest test SyntaxError: unexpected token export? no problem!](https://github.com/mytabworks/mytabworks-utils/blob/master/README.md#jest-test-issue)
 
 ## License
 MIT Licensed. Copyright (c) Mytabworks 2020.
