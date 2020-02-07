@@ -5,18 +5,18 @@ To make it optimize, user can search in the option without updating every entry.
 It support Enter to select and Backspace to remove multiple selected option
 
 # installation
-
+```
 npm install --save mytabworks-react-select
-
+```
 # How to use
 
 ## import to your project
-```
+```js
 import Select from 'mytabworks-react-select'
 ```
 
 ## basic usage
-```js
+```html
 <Select id="country" name="country">
     {[
         {label: "Philippines", value: "ph"},
@@ -28,7 +28,7 @@ import Select from 'mytabworks-react-select'
 
 ## value usage
 It will set a value of the select, but without onChange event it will be like a `read-only`. instead use `defaultValue`.
-```js
+```html
 <Select id="country" name="country" value={{label: "Philippines", value: "ph"}}>
     {[
         {label: "Philippines", value: "ph"},
@@ -40,7 +40,7 @@ It will set a value of the select, but without onChange event it will be like a 
 
 ## multiple property usage
 It can select multiple options and set multiple default values.
-```js
+```html
 <Select id="emotions" name="emotions" defaultValue={[{label: "Happy", value: "1"}, {label: "Excited", value: "2"}]} multiple={true}>
     {[
         {label: "Happy", value: "1"},
@@ -55,7 +55,7 @@ It can select multiple options and set multiple default values.
 
 ## option group usage
 It can group the options.
-```js
+```html
 <Select id="emotions" name="emotions" defaultValue={[{label: "Happy", value: "1"}, {label: "Excited", value: "2"}]} multiple={true}>
     {[  
         {label: "Possitive", value: [
