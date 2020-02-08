@@ -11,7 +11,7 @@ This was an un-mediocre module which is build from the ground up to solve the pr
     - [Multiple Property Usage](#multiple-property-usage)
     - [Option Group Usage](#option-group-usage)
     - [Disabled Usage](#disabled-usage)
-    - [isSearch Usage](#issearch-usage)
+    - [isSearch Property Usage](#issearch-property-usage)
 - [Properties](#properties) 
 - [Keyboard Functionalities](#keyboard-functionalities)
 - [License](#license)
@@ -103,7 +103,7 @@ It can group the options.
 </Select>
 ```
 
-## isSearch Usage
+## isSearch Property Usage
 It suggest an option when starting searching or typing
 ```js
 const list = [....]
@@ -134,12 +134,7 @@ The datatypes with "*" means it is required.
 | onChange    | func          |             | it enables to subscribe change event| 
 | noDisplayText| string       | "no option" | the text when there is no option|
 | searchSpeed | number        | 500         | it is the delay when stop typing|
-| children    | arrayOf({
-    label: string, 
-    value: string\|arrayOf({
-        label: string, value: string
-    })
-})| | the option list |
+| children    | arrayOf({</br>label: string,</br> value: string\|arrayOf({</br>label: string, value: string</br>})</br>})| | the option list |
 
 # Keyboard Functionalities 
 
