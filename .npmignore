@@ -1,10 +1,22 @@
+src
+scripts
+demo
+.babelrc
+webpack.config.js
+index.css
+index.js
+App.js
+serviceWorker.js
+setupTests.js
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
+/src
+/Components
 /.pnp
 .pnp.js
-/src/node_modules
 
 # testing
 /coverage

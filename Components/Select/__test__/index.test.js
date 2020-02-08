@@ -127,7 +127,7 @@ describe('consistent test agrregation', () => {
     })
 
     test('select with defaultValue not multiple', () => {
-        const { getByTestId } = render(<Select id="test-3" name="select-3" defaultValue={{label: 'beginer', value: '1'}} data-testid="test">{selectChild}</Select>)
+        const { getByTestId } = render(<Select id="test-3" name="select-3" defaultValue="1" data-testid="test">{selectChild}</Select>)
 
         const select = getByTestId("test")
         
@@ -168,7 +168,7 @@ describe('consistent test agrregation', () => {
 
     test('select with value multiple', () => {
         
-        const { getByTestId, getByText } = render(<Select id="test-4" name="select-4" value={[{label: 'beginer', value: '1'}, {label: 'expert', value: '5'}]} multiple={true} isAutoClear={true} data-testid="test">{selectChild}</Select>)
+        const { getByTestId, getByText } = render(<Select id="test-4" name="select-4" value={["1","5"]} multiple={true} isAutoClear={true} data-testid="test">{selectChild}</Select>)
 
         const select = getByTestId("test")
         
@@ -211,7 +211,7 @@ describe('consistent test agrregation', () => {
 
         test('select with value and disabled multiple', () => {
         
-        const { getByTestId, getByText } = render(<Select id="test-5" name="select-5" value={[{label: 'beginer', value: '1'}, {label: 'expert', value: '5'}]} multiple={true} disabled={true} isAutoClear={true} data-testid="test">{selectChild}</Select>)
+        const { getByTestId, getByText } = render(<Select id="test-5" name="select-5" value={['1','5']} multiple={true} disabled={true} isAutoClear={true} data-testid="test">{selectChild}</Select>)
 
         const select = getByTestId("test")
         
