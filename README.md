@@ -131,6 +131,7 @@ The datatypes with "*" means it is required.
 | multiple    | boolean       | false       | it allow users to select multiple option|
 | isAutoClear | boolean       | false       | it clear the searched text after selecting|
 | isSearch    | boolean       | false       | it only drop the options when start typing|
+| AutoNavigate| boolean       | false       | it navigates the first row in the options without navigating |
 | onChange    | func          |             | it enables to subscribe change event| 
 | noDisplayText| string       | "no option" | the text when there is no option|
 | searchSpeed | number        | 500         | it is the delay when stop typing|
