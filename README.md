@@ -142,7 +142,7 @@ The datatypes with "*" means it is required.
 | onChange    | func          |             | it enables to subscribe change event| 
 | noDisplayText| string       | "no option" | the text when there is no option|
 | searchSpeed | number        | 500         | it is the delay when stop typing|
-| children    | arrayOf({</br> label: string,</br> value: string\|arrayOf({</br>  label: string, value: string</br> })</br>})| | the option list |
+| children    | arrayOf({</br> &nbsp;label: string,</br> &nbsp;value: string\|arrayOf({</br>  &nbsp;&nbsp;label: string, value: string</br> &nbsp;})</br>})| | the option list |
 
 # Keyboard Functionalities 
 
@@ -152,6 +152,7 @@ The datatypes with "*" means it is required.
 | Arrow Up  | arrow up can be use to navigate selection upward|when options is opened |
 | Enter     | enter can be use when you already navigated your option| when options is opened
 | Backspace | backspace can be use when search bar is already empty in multiple selection list| when searchbar is already empty but will not triggered when there is a text then use backspace till its empty unless the searchbar is already empty |
+| ESC | it will close the dropdown option| | 
 
 
 ## License
