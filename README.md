@@ -1,4 +1,4 @@
-[![NPM](https://img.shields.io/badge/NPM-v0.1.6-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
+[![NPM](https://img.shields.io/badge/NPM-v0.1.9-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
 
 # mytabworks-react-select 
 This was an un-mediocre module which is build from the ground up to solve the problems in selection list especially when options are unreachable. it has no extra dependencies which can be a little less. 
@@ -30,7 +30,7 @@ import Select from 'mytabworks-react-select'
 ## Basic Usage
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 ```html
-<Select id="country" name="country">
+<Select id="country" name="country" placeholder="Choose one">
     {[
         {label: "Philippines", value: "ph"},
         {label: "United States", value: "us"},
@@ -56,7 +56,7 @@ It will set a value of the select, but without onChange event it will be like a 
 It can select multiple options and set multiple default values.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 ```html
-<Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
+<Select id="emotions" name="emotions" placeholder="choose one or more" defaultValue={["1","2"]} multiple={true}>
     {[
         {label: "Happy", value: "1"},
         {label: "Excited", value: "2"},

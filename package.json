@@ -1,8 +1,8 @@
 {
     "name": "mytabworks-react-select",
-    "version": "0.1.7",
+    "version": "0.1.9",
     "main": "lib/index.js",
-    "description": "This was an un-mediocre module which is build from the ground up to solve the problem in selection list especially when options are unreachable without extra dependencies.",
+    "description": "It is build from the ground up to solve the problem in selection list especially when options are unreachable without extra dependencies.",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/mytabworks/mytabworks-react-select.git"
@@ -10,6 +10,7 @@
     "keywords": [
         "react-select",
         "mytabworks",
+        "react",
         "select",
         "react-select",
         "mytabworks-react-select",
