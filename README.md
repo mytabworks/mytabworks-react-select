@@ -28,8 +28,8 @@ import Select from 'mytabworks-react-select'
 ```
 
 ## Basic Usage
-```html
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+```html
 <Select id="country" name="country">
     {[
         {label: "Philippines", value: "ph"},
@@ -40,9 +40,9 @@ import Select from 'mytabworks-react-select'
 ```
 
 ## Controllable Value Usage
-It will set a value of the select, but without onChange event it will be like a `read-only`. instead use `defaultValue`.
-```html
+It will set a value of the select, but without onChange event it will be like a `read-only`. instead use `defaultValue`.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+```html
 <Select id="country" name="country" value="ph">
     {[
         {label: "Philippines", value: "ph"},
@@ -53,9 +53,9 @@ It will set a value of the select, but without onChange event it will be like a 
 ```
 
 ## Multiple Property Usage
-It can select multiple options and set multiple default values.
-```html
+It can select multiple options and set multiple default values.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
     {[
         {label: "Happy", value: "1"},
@@ -69,9 +69,9 @@ It can select multiple options and set multiple default values.
 ```
 
 ## Option Group Usage
-It can group the options.
-```html
+It can group the options.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
     {[  
         {label: "Possitive", value: [
@@ -89,9 +89,9 @@ It can group the options.
 ```
 
 ## Disabled Usage
-It can group the options.
-```html
+It can group the options.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true} disabled={true}>
     {[  
         {label: "Possitive", value: [
@@ -109,9 +109,9 @@ It can group the options.
 ```
 
 ## isSearch Property Usage
-It suggest an option when starting searching or typing
-```js
+It suggest an option when starting searching or typing<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+```js
 const list = [....]
 ....
 ```
