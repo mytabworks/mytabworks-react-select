@@ -1,4 +1,4 @@
-[![NPM](https://img.shields.io/badge/NPM-v0.1.2-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
+[![NPM](https://img.shields.io/badge/NPM-v0.1.6-crimson)](https://www.npmjs.com/package/mytabworks-react-select) [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 
 # mytabworks-react-select 
 This was an un-mediocre module which is build from the ground up to solve the problems in selection list especially when options are unreachable. it has no extra dependencies which can be a little less. 
@@ -28,6 +28,7 @@ import Select from 'mytabworks-react-select'
 ```
 
 ## Basic Usage
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 ```html
 <Select id="country" name="country">
     {[
@@ -41,6 +42,7 @@ import Select from 'mytabworks-react-select'
 ## Controllable Value Usage
 It will set a value of the select, but without onChange event it will be like a `read-only`. instead use `defaultValue`.
 ```html
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 <Select id="country" name="country" value="ph">
     {[
         {label: "Philippines", value: "ph"},
@@ -51,6 +53,7 @@ It will set a value of the select, but without onChange event it will be like a 
 ```
 
 ## Multiple Property Usage
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 It can select multiple options and set multiple default values.
 ```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
@@ -66,6 +69,7 @@ It can select multiple options and set multiple default values.
 ```
 
 ## Option Group Usage
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 It can group the options.
 ```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
@@ -85,6 +89,7 @@ It can group the options.
 ```
 
 ## Disabled Usage
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 It can group the options.
 ```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true} disabled={true}>
@@ -104,6 +109,7 @@ It can group the options.
 ```
 
 ## isSearch Property Usage
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 It suggest an option when starting searching or typing
 ```js
 const list = [....]
@@ -121,21 +127,22 @@ The datatypes with "*" means it is required.
 
 |`PROPERTY`   |`DATATYPES`    |`DEFAULT`    |`DESCRIPTION`|
 |-------------|---------------|-------------|-------------|
-| id          | string *      |             | id of the HTML select|
-| name        | string *      |             | name of the HTML select|
-| value       | array\|object |             | control the [current value](https://github.com/mytabworks/mytabworks-react-select/blob/master#current-value-usage)|
-| defaultValue| array\|object |             | the default value|
-| placeholder | string        |             | placeholder of your Select|
-| className   | string        |             | additional className for the Component container|
+| id          | string *      | &nbsp;            | id of the HTML select|
+| name        | string *      | &nbsp;            | name of the HTML select|
+| value       | array\|object | &nbsp;            | control the [current value](#controllable-value-usage)|
+| defaultValue| array\|object | &nbsp;            | the default value|
+| placeholder | string        | &nbsp;            | placeholder of your Select|
+| className   | string        | &nbsp;            | additional className for the Component container|
 | disabled    | bolean        | false       | disabling the Select|
 | multiple    | boolean       | false       | it allow users to select multiple option|
 | isAutoClear | boolean       | false       | it clear the searched text after selecting|
 | isSearch    | boolean       | false       | it only drop the options when start typing|
-| AutoNavigate| boolean       | false       | it navigates the first row in the options without navigating |
+| isAutoNavigate| boolean       | false       | it navigates the first row in the options without navigating |
+| isClearOptions | boolean       | true       | it clear the option list when options is not active |
 | onChange    | func          |             | it enables to subscribe change event| 
 | noDisplayText| string       | "no option" | the text when there is no option|
 | searchSpeed | number        | 500         | it is the delay when stop typing|
-| children    | arrayOf({</br>label: string,</br> value: string\|arrayOf({</br>label: string, value: string</br>})</br>})| | the option list |
+| children    | arrayOf({</br> label: string,</br> value: string\|arrayOf({</br>  label: string, value: string</br> })</br>})| | the option list |
 
 # Keyboard Functionalities 
 
@@ -145,5 +152,7 @@ The datatypes with "*" means it is required.
 | Arrow Up  | arrow up can be use to navigate selection upward|when options is opened |
 | Enter     | enter can be use when you already navigated your option| when options is opened
 | Backspace | backspace can be use when search bar is already empty in multiple selection list| when searchbar is already empty but will not triggered when there is a text then use backspace till its empty unless the searchbar is already empty |
+
+
 ## License
 MIT Licensed. Copyright (c) fernando tabamo jr(Mytabworks) 2020. 
