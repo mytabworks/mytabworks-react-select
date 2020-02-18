@@ -1,6 +1,6 @@
 {
     "name": "mytabworks-react-select",
-    "version": "0.1.9",
+    "version": "0.2.0",
     "main": "lib/index.js",
     "description": "It is build from the ground up to solve the problem in selection list especially when options are unreachable without extra dependencies.",
     "repository": {

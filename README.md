@@ -1,4 +1,4 @@
-[![NPM](https://img.shields.io/badge/NPM-v0.1.9-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
+[![NPM](https://img.shields.io/badge/NPM-v0.2.0-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
 
 # mytabworks-react-select 
 This was an un-mediocre module which is build from the ground up to solve the problems in selection list especially when options are unreachable. it has no extra dependencies which can be a little less. 
@@ -12,6 +12,7 @@ This was an un-mediocre module which is build from the ground up to solve the pr
     - [Option Group Usage](#option-group-usage)
     - [Disabled Usage](#disabled-usage)
     - [isSearch Property Usage](#issearch-property-usage)
+    - [Typescript Supported Usage](#typescript-supported-usage)
 - [Properties](#properties) 
 - [Keyboard Functionalities](#keyboard-functionalities)
 - [License](#license)
@@ -19,6 +20,10 @@ This was an un-mediocre module which is build from the ground up to solve the pr
 # installation
 ```
 npm i mytabworks-react-select
+```
+or
+```
+yarn add mytabworks-react-select
 ```
 # How to use
 
@@ -121,6 +126,21 @@ const list = [....]
 </Select>
 ```
 
+## Typescript Supported Usage
+```js
+import Select, {SelectProps, OptionProps} from "mytabworks-react-select"
+```
+```js
+const list: OptionProps[] = [....]
+....
+```
+```html
+<Select id="list" name="list" multiple={true} isSearch={true} searchSpeed={100}>
+    {list}
+</Select>
+```
+
+
 # Properties
 All properties that is supported by mytabworks-react-select.<br/>
 The datatypes with "*" means it is required.
@@ -139,6 +159,7 @@ The datatypes with "*" means it is required.
 | isSearch    | boolean       | false       | it only drop the options when start typing|
 | isAutoNavigate| boolean       | false       | it navigates the first row in the options without navigating |
 | isClearOptions | boolean       | true       | it clear the option list when options is not active |
+| isShowNoDisplay | boolean       | true       | it will show the noDisplay when there is no option matched, if it is false it will not show|
 | onChange    | func          |             | it enables to subscribe change event| 
 | noDisplayText| string       | "no option" | the text when there is no option|
 | searchSpeed | number        | 500         | it is the delay when stop typing|
