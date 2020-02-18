@@ -1,4 +1,4 @@
-[![NPM](https://img.shields.io/badge/NPM-v0.1.6-crimson)](https://www.npmjs.com/package/mytabworks-react-select) [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+[![NPM](https://img.shields.io/badge/NPM-v0.1.6-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
 
 # mytabworks-react-select 
 This was an un-mediocre module which is build from the ground up to solve the problems in selection list especially when options are unreachable. it has no extra dependencies which can be a little less. 
@@ -40,9 +40,9 @@ import Select from 'mytabworks-react-select'
 ```
 
 ## Controllable Value Usage
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)<br>
 It will set a value of the select, but without onChange event it will be like a `read-only`. instead use `defaultValue`.
 ```html
-[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 <Select id="country" name="country" value="ph">
     {[
         {label: "Philippines", value: "ph"},
@@ -53,7 +53,7 @@ It will set a value of the select, but without onChange event it will be like a 
 ```
 
 ## Multiple Property Usage
-[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)<br>
 It can select multiple options and set multiple default values.
 ```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
@@ -69,7 +69,7 @@ It can select multiple options and set multiple default values.
 ```
 
 ## Option Group Usage
-[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)<br>
 It can group the options.
 ```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
@@ -89,7 +89,7 @@ It can group the options.
 ```
 
 ## Disabled Usage
-[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)<br>
 It can group the options.
 ```html
 <Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true} disabled={true}>
@@ -109,7 +109,7 @@ It can group the options.
 ```
 
 ## isSearch Property Usage
-[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)<br>
 It suggest an option when starting searching or typing
 ```js
 const list = [....]
