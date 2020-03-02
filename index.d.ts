@@ -30,8 +30,8 @@ export interface SelectProps {
     isAutoNavigate?: boolean;
     isClearOptions?: boolean;
     isShowNoDisplay?:boolean;
-    sortAlgorithm?: (a: object, b: object, c?: object) => OptionProps[];
-    isFromStartSearch:boolean;
+    sortAlgorithm?: (a: OptionProps, b: OptionProps, c?: any) => OptionProps[];
+    isFromStartSearch?:boolean;
 }
 
 declare const Select: React.FunctionComponent<SelectProps> 
