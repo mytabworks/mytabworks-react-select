@@ -1,4 +1,4 @@
-[![NPM](https://img.shields.io/badge/NPM-v0.2.2-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
+[![NPM](https://img.shields.io/badge/NPM-v0.2.4-crimson)](https://www.npmjs.com/package/mytabworks-react-select)
 
 # mytabworks-react-select 
 This was an un-mediocre module which is build from the ground up to solve the problems in selection list especially when options are unreachable. it has no extra dependencies which can be a little less. 
@@ -62,7 +62,7 @@ It will set a value of the select, but without onChange event it will be like a 
 It can select multiple options and set multiple default values.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 ```html
-<Select id="emotions" name="emotions" placeholder="choose one or more" defaultValue={["1","2"]} multiple={true}>
+<Select id="emotions" name="emotions" placeholder="choose one or more" defaultValue={["1","2"]} multiple>
     {[
         {label: "Happy", value: "1"},
         {label: "Excited", value: "2"},
@@ -78,7 +78,7 @@ It can select multiple options and set multiple default values.<br><br>
 It can group the options.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 ```html
-<Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true}>
+<Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple>
     {[  
         {label: "Possitive", value: [
             {label: "Happy", value: "1"},
@@ -98,7 +98,7 @@ It can group the options.<br><br>
 It can group the options.<br><br>
 [![Edit mytabworks-react-select](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mytabworks-react-select-06plg?fontsize=14&hidenavigation=1&theme=dark)
 ```html
-<Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple={true} disabled={true}>
+<Select id="emotions" name="emotions" defaultValue={["1","2"]} multiple disabled>
     {[  
         {label: "Possitive", value: [
             {label: "Happy", value: "1"},
@@ -122,7 +122,7 @@ const list = [....]
 ....
 ```
 ```html
-<Select id="list" name="list" multiple={true} isSearch={true} searchSpeed={100}>
+<Select id="list" name="list" multiple isSearch searchSpeed={100}>
     {list}
 </Select>
 ```
@@ -147,7 +147,7 @@ const desc_algo = (a, b, {pattern}) => {
 }
 ```
 ```html
-<Select id="list" name="list" multiple={true} isSearch={true} searchSpeed={100}
+<Select id="list" name="list" multiple isSearch searchSpeed={100}
 sortAlgorithm={priority_and_asc_algo}>
     {list}
 </Select>
@@ -162,7 +162,7 @@ const list: OptionProps[] = [....]
 ....
 ```
 ```html
-<Select id="list" name="list" multiple={true} isSearch={true} searchSpeed={100}>
+<Select id="list" name="list" multiple isSearch searchSpeed={100}>
     {list}
 </Select>
 ```
@@ -192,7 +192,7 @@ The datatypes with "*" means it is required.
 | noDisplayText| string       | "no option" | the text when there is no option|
 | searchSpeed | number        | 500         | it is the delay when stop typing|
 | sortAlgorithm | function    | &nbsp;      | it is use to change the algorithm of the sort, it must return true if option a is ascending from option b. false if option a is decending |
-| children    | arrayOf({</br> &nbsp;label: string,</br> &nbsp;value: string\|arrayOf({</br>  &nbsp;&nbsp;label: string, value: string</br> &nbsp;})</br>})| | the option list |
+| children    | Array<{</br> &nbsp;&nbsp;&nbsp;label: string,</br> &nbsp;&nbsp;&nbsp;value: string\|Array<{</br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;label: string, </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: string</br> &nbsp;&nbsp;&nbsp;}></br>}>| | the option list |
 
 # Keyboard Functionalities 
 
